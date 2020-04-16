@@ -1,0 +1,27 @@
+[
+    {
+        "model": "Real",
+        "price": 40,
+        "image": "Real.jpg"
+    },
+    {
+        "model": "Alien Workshop",
+        "price": 40,
+        "image": "Alien.jpg"
+    },
+    {
+        "model": "Anti Hero",
+        "price": 40,
+        "image": "Anti-Hero.jpg"
+    },
+    {
+        "model": "Baker",
+        "price": 40,
+        "image": "Baker.jpg"
+    },
+    {
+        "model": "Zero",
+        "price": 40,
+        "image": "Zero.jpg"
+    }
+  ]
