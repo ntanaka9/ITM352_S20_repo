@@ -11,9 +11,9 @@ app.all('*', function (request, response, next) {
 
 app.use(myParser.urlencoded({ extended: true }));
 app.post("/process_form", function (request, response) {
-   let POST = request.body;
-   response.send(POST); 
+    let POST = request.body;
+    response.send(POST);
 });
 
-app.use(express.static('./public'));
-app.listen(8090, () => console.log(`listening on port 8090 LOL`));
+app.use(express.static('./public));
+app.listen(8080, () => console.log(`listening on port 8080`));
