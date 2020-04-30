@@ -1,0 +1,340 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head><script>//Code from SmartPhoneProducts1_1 products_display.html</script>
+    <link rel="stylesheet" href="./products-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nami's Used Complete Skateboards</title>
+
+</head>
+
+<body>    
+    <h1>Nami's Used Complete Skateboards</h1>
+
+<div><main>
+    <section class="item" 
+    onclick="this.className='item';">
+        <h2>Real</h2>
+        <p>&dollar;40.00</p>
+        <img src="./images/Real.jpg">
+
+   
+   <script>    // Code from Lab12 order_page.html
+
+        function checkQuantityTextbox(theTextbox) {
+            var errs = isNonNegInt(theTextbox.value, true);
+            qty_textbox_message.innerHTML = errs.join(",");
+        }
+    
+        function isNonNegInt(q, returnErrors = false) {
+            errors = []; // assume no errors at first
+            if (Number(q) != q) errors.push('Not a number!'); // Check if string is a number value
+            else {
+                if (q < 0) errors.push('Negative value!'); // Check if it is non-negative
+                if (parseInt(q) != q) errors.push('Not an integer!'); // Check that it is an integer
+            }
+            return returnErrors ? errors : (errors.length == 0);
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+    let params = (new URL(document.location)).searchParams;
+    POST = {};
+    params.forEach(function (value, key) { POST[key] = value });
+    
+    if (typeof POST['quantity_textbox'] != 'undefined') {
+        qty = POST["quantity_textbox"];
+        console.log(qty);
+        if(isNonNegInt(qty,false)) {
+            document.write(`Thank for you for ordering ${qty} things!`);
+            window.stop();
+        } else {
+            quantity_form['quantity_textbox'].value= qty; 
+        }
+
+    }
+    </script>
+<form name="quantity_form" action="order_page.html" method="POST">
+    Quantity: <input name="quantity_textbox" type="text" maxlength="4" size="4" onkeyup="checkQuantityTextbox(quantity_textbox);">
+</form>
+</body>
+
+</html>
+
+<script>
+      if (typeof POST['quantity_textbox'] != 'undefined') {
+        quantity_form['quantity_textbox'].value= qty; 
+      }
+
+</script>
+
+    </section>
+
+
+
+    <section class="item" 
+    onclick="this.className='item';">
+        <h2>Alien Workshop</h2>
+        <p>&dollar;40.00</p>
+        <img src="./images/Alien.jpg">
+
+        <script>    // Code from Lab12 order_page.html
+
+            function checkQuantityTextbox(theTextbox) {
+                var errs = isNonNegInt(theTextbox.value, true);
+                qty_textbox_message.innerHTML = errs.join(",");
+            }
+        
+            function isNonNegInt(q, returnErrors = false) {
+                errors = []; // assume no errors at first
+                if (Number(q) != q) errors.push('Not a number!'); // Check if string is a number value
+                else {
+                    if (q < 0) errors.push('Negative value!'); // Check if it is non-negative
+                    if (parseInt(q) != q) errors.push('Not an integer!'); // Check that it is an integer
+                }
+                return returnErrors ? errors : (errors.length == 0);
+            }
+        </script>
+    </head>
+    
+    <body>
+        <script>
+        let params = (new URL(document.location)).searchParams;
+        POST = {};
+        params.forEach(function (value, key) { POST[key] = value });
+        
+        if (typeof POST['quantity_textbox'] != 'undefined') {
+            qty = POST["quantity_textbox"];
+            console.log(qty);
+            if(isNonNegInt(qty,false)) {
+                document.write(`Thank for you for ordering ${qty} things!`);
+                window.stop();
+            } else {
+                quantity_form['quantity_textbox'].value= qty; 
+            }
+    
+        }
+        </script>
+    <form name="quantity_form" action="order_page.html" method="POST">
+        Quantity: <input name="quantity_textbox" type="text" maxlength="4" size="4" onkeyup="checkQuantityTextbox(quantity_textbox);">
+        
+
+
+
+
+
+    </form>
+    </body>
+    
+    </html>
+    
+    <script>
+          if (typeof POST['quantity_textbox'] != 'undefined') {
+            quantity_form['quantity_textbox'].value= qty; 
+          }
+    
+    </script>
+    
+    
+    </section>
+
+
+
+
+    <section class="item" 
+    onclick="this.className='item';">
+        <h2>Anti Hero</h2>
+        <p>&dollar;40.00</p>
+        <img src="./images/Anti-Hero.jpg">
+
+<script>    // Code from Lab12 order_page.html
+
+            function checkQuantityTextbox(theTextbox) {
+                var errs = isNonNegInt(theTextbox.value, true);
+                qty_textbox_message.innerHTML = errs.join(",");
+            }
+        
+            function isNonNegInt(q, returnErrors = false) {
+                errors = []; // assume no errors at first
+                if (Number(q) != q) errors.push('Not a number!'); // Check if string is a number value
+                else {
+                    if (q < 0) errors.push('Negative value!'); // Check if it is non-negative
+                    if (parseInt(q) != q) errors.push('Not an integer!'); // Check that it is an integer
+                }
+                return returnErrors ? errors : (errors.length == 0);
+            }
+        </script>
+    </head>
+    
+    <body>
+        <script>
+        let params = (new URL(document.location)).searchParams;
+        POST = {};
+        params.forEach(function (value, key) { POST[key] = value });
+        
+        if (typeof POST['quantity_textbox'] != 'undefined') {
+            qty = POST["quantity_textbox"];
+            console.log(qty);
+            if(isNonNegInt(qty,false)) {
+                document.write(`Thank for you for ordering ${qty} things!`);
+                window.stop();
+            } else {
+                quantity_form['quantity_textbox'].value= qty; 
+            }
+    
+        }
+        </script>
+    <form name="quantity_form" action="order_page.html" method="POST">
+        Quantity: <input name="quantity_textbox" type="text" maxlength="4" size="4" onkeyup="checkQuantityTextbox(quantity_textbox);">
+    </form>
+    </body>
+    
+    </html>
+    
+    <script>
+          if (typeof POST['quantity_textbox'] != 'undefined') {
+            quantity_form['quantity_textbox'].value= qty; 
+          }
+    
+    </script>
+
+    </section>
+
+
+    <section class="item" 
+    onclick="this.className='item';">
+        <h2>Baker</h2>
+        <p>&dollar;40.00</p>
+        <img src="./images/Baker.jpg">
+
+        <script>    // Code from Lab12 order_page.html
+
+            function checkQuantityTextbox(theTextbox) {
+                var errs = isNonNegInt(theTextbox.value, true);
+                qty_textbox_message.innerHTML = errs.join(",");
+            }
+        
+            function isNonNegInt(q, returnErrors = false) {
+                errors = []; // assume no errors at first
+                if (Number(q) != q) errors.push('Not a number!'); // Check if string is a number value
+                else {
+                    if (q < 0) errors.push('Negative value!'); // Check if it is non-negative
+                    if (parseInt(q) != q) errors.push('Not an integer!'); // Check that it is an integer
+                }
+                return returnErrors ? errors : (errors.length == 0);
+            }
+        </script>
+    </head>
+    
+    <body>
+        <script>
+        let params = (new URL(document.location)).searchParams;
+        POST = {};
+        params.forEach(function (value, key) { POST[key] = value });
+        
+        if (typeof POST['quantity_textbox'] != 'undefined') {
+            qty = POST["quantity_textbox"];
+            console.log(qty);
+            if(isNonNegInt(qty,false)) {
+                document.write(`Thank for you for ordering ${qty} things!`);
+                window.stop();
+            } else {
+                quantity_form['quantity_textbox'].value= qty; 
+            }
+    
+        }
+        </script>
+    <form name="quantity_form" action="order_page.html" method="POST">
+        Quantity: <input name="quantity_textbox" type="text" maxlength="4" size="4" onkeyup="checkQuantityTextbox(quantity_textbox);">
+    </form>
+    </body>
+    
+    </html>
+    
+    <script>
+          if (typeof POST['quantity_textbox'] != 'undefined') {
+            quantity_form['quantity_textbox'].value= qty; 
+          }
+    
+    </script>
+    
+    
+    </section>
+
+
+
+    <section class="item" 
+    onclick="this.className='item';">
+        <h2>Zero</h2>
+        <p>&dollar;40.00</p>
+        <img src="./images/Zero.jpg">
+
+
+        <script>    // Code from Lab12 order_page.html
+
+            function checkQuantityTextbox(theTextbox) {
+                var errs = isNonNegInt(theTextbox.value, true);
+                qty_textbox_message.innerHTML = errs.join(",");
+            }
+        
+            function isNonNegInt(q, returnErrors = false) {
+                errors = []; // assume no errors at first
+                if (Number(q) != q) errors.push('Not a number!'); // Check if string is a number value
+                else {
+                    if (q < 0) errors.push('Negative value!'); // Check if it is non-negative
+                    if (parseInt(q) != q) errors.push('Not an integer!'); // Check that it is an integer
+                }
+                return returnErrors ? errors : (errors.length == 0);
+            }
+        </script>
+    </head>
+    
+    <body>
+        <script>
+        let params = (new URL(document.location)).searchParams;
+        POST = {};
+        params.forEach(function (value, key) { POST[key] = value });
+        
+        if (typeof POST['quantity_textbox'] != 'undefined') {
+            qty = POST["quantity_textbox"];
+            console.log(qty);
+            if(isNonNegInt(qty,false)) {
+                <form name="quantity_form" action="order_page.html" method="POST">
+                window.stop();
+            } else {
+                quantity_form['quantity_textbox'].value= qty; 
+            }
+    
+        }
+        </script>
+        
+    <form name="quantity_form" action="invoice1-1.html" method="POST">
+        Quantity: <input name="quantity_textbox" type="text" maxlength="4" size="4" onkeyup="checkQuantityTextbox(quantity_textbox);">
+        
+        <br>
+        <input type="submit" value="Purchase">
+        <span id='purchase_button_message'></span>
+    </form>
+    </body>
+    
+    </html>
+    
+    <script>
+          if (typeof POST['quantity_textbox'] != 'undefined') {
+            quantity_form['quantity_textbox'].value= qty; 
+          }
+    
+    </script>
+    
+    
+    </section>
+
+
+</main>
+</div>
+</body>
+</html>
