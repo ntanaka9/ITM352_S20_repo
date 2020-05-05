@@ -1,0 +1,41 @@
+    /* General */ 
+    body {
+        width: 800px; 
+        margin: 0 auto;
+    }
+     /* Typography */
+    
+     h1, h2 {
+         text-align: center;
+     }
+    
+    
+     /* form styling */
+     main {
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-around;
+         display: table-cell; /*makes products in a column; code from https://html-online.com/articles/image-align-center/*/
+         height: 700px; 
+         text-align: center;
+         width: 700px;
+         vertical-align: middle;
+         background: whitesmoke;
+     }
+    
+     /* Styling the products */
+     .item img {
+         width: 200px;
+         height: 200px; 
+     }
+     
+     img {
+        border: 1px solid black;
+        /* Gray border */
+        border-radius: 4px;
+        /* Rounded border */
+        padding: 5px;
+        /* Some padding */
+        width: 150px;
+        /* Set a small width */
+    }
