@@ -6,8 +6,8 @@ var cookieParser = require('cookie-parser');
 app.use(cookieParser());
 
 var session = require('express-session');
-app.use(session({
-    secret: "ITM352 rocks!",   
+app.use(session({ 
+    secret: "ITM352 rocks!", //secret: hackers can't hack
     resave: false,
     saveUninitialized: true
 }));
@@ -42,19 +42,20 @@ app.get('/use_cookie', function (request, response) {
 });
 
 app.get('/use_session', function (request, response) {
-    console.log('In GET /use_session' , request.cookies);
+    console.log('In GET /use_session' , request.session);
     var the_sess_id = request.session.id;
-    response.send('welcome, your session ID is ' + the_sess_id); //Sets name = express
+    response.send('Welcome, your session ID is ' + the_sess_id); //Sets name = express
 });
-
 
 app.get("/login", function (request, response) {
     console.log(request.query); // print out q-str
     quantity_str = request.query;
+
     // Give a simple login form
     str = `
 <body>
-<h1>${request.query["error"]}</h1>
+<h1>Hello ${session.username}! You last logged in on ${session.last_login_time}</h>
+<h1>${request.query["error"]}</h1> 
 <form action="/check_login" method="POST">
 <input type="text" name="username" size="40" placeholder="enter username" value=${request.query["username"]} ><br />
 <input type="password" name="password" size="40" placeholder="enter password"><br />
@@ -78,7 +79,10 @@ app.post("/check_login", function (request, response) {
         if (user_info["password"] != request.body["password"]) {
             err_str = `bad_password`;
         } else {
-            response.end(`${login_username} is logged in with data ${JSON.stringify(quantity_str)}`);
+            session.username = login_username;
+            var theDate  = Date.now();
+            session.last_login_time= theDate;
+            response.end(`${login_username} is logged in with data ${JSON.stringify(quantity_str)} on ${theDate}`);
             return;
         }
 

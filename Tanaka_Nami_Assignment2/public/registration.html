@@ -1,0 +1,20 @@
+<script>//add css style page
+    let params = (new URL(document.location)).searchParams; //passes info
+    if(params.has("err")) {
+   alert("Error: "+ params.get("err")); //if there is an error, this message comes up
+    }  
+</script>
+
+<body>
+    <form action="/register_user" name= register_form method="POST">
+    <input type="text" name="username" size="40" placeholder="enter username" ><br />
+    <input type="password" name="password" size="40" placeholder="enter password"><br />
+    <input type="password" name="repeat_password" size="40" placeholder="enter password again"><br />
+    <input type="email" name="email" size="40" placeholder="enter email"><br />
+    <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+
+<script>
+    register_form.action += location.search; //location.search is qry str.
+</script>

@@ -1,3 +1,4 @@
+var products=
 [
     {
         "model": "Real",
@@ -24,4 +25,8 @@
         "price": 40.00,
         "image": "Zero.jpg"
     }
-  ]
+  ];
+
+  if(typeof module != "undefined") { //if not undefined
+    module.exports.theproducts=products;
+  } 
